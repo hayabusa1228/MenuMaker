@@ -34,6 +34,9 @@ const LoginForm: React.FC = () => {
     if(result.status == "OK"){
       // Loginする
       router.push("http://localhost:3000")
+    }else{
+      setfn(true);
+      clear_input();
     }
   };
 
