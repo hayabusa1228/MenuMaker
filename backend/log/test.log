@@ -1,0 +1,4 @@
+2022/11/06 19:13:45 C:/Users/tsuji/Desktop/MenuMaker/backend/controllers/MenuHandler.go:18: json: cannot unmarshal object into Go value of type []structs.Table
+2022/11/06 19:13:55 C:/Users/tsuji/Desktop/MenuMaker/backend/controllers/MenuHandler.go:18: json: cannot unmarshal object into Go value of type []structs.Table
+2022/11/06 19:21:42 C:/Users/tsuji/Desktop/MenuMaker/backend/controllers/MenuHandler.go:15: {hayato [{1 at24eibb3e8 /MenuTransition/1} {2 mehp9843la8 /MenuTransition/2}]}
+2022/11/06 19:41:34 C:/Users/tsuji/Desktop/MenuMaker/backend/database/design_db.go:70: {19 スタバ [{16 19 日替わり定食 [{16 16 梅干し付き御飯 hayato/日替わり定食/4r8g14pj4vgimages.jpg 500}]}]}
