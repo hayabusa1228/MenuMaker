@@ -15,7 +15,7 @@ func CreateUserInfoDB(filepath string){
   if err != nil {
     panic("failed to connect database")
   }
-	db.AutoMigrate(&structs.UserInfo{})
+	db.AutoMigrate(&structs.OrderContent{},&structs.Table{},&structs.Content{},&structs.Menu{},&structs.MenuDesign{},&structs.UserInfo{})
 }
 
 func CheckUserNameAndPassword(logininfo *structs.UserInfo, filepath string) bool {

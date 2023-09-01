@@ -13,7 +13,7 @@ import (
 	"github.com/hayabusa1228/MenuCreator/structs"
 )
 
-const db_file_path = "./database/userinfo.db"
+const db_file_path = "./database/db/userinfo.db"
 var hash_add_string = "bvslfjvbsbvslnblsnblwabnerbreblbnefbn.febnfbf.bneksfbnfbnefbnfbnfk;b;fkb;kfnb;febfektb"
 
 
@@ -33,7 +33,7 @@ func LoginHandler(c *gin.Context){
 	c.JSON(http.StatusOK, gin.H{
 			"status" : "NG",
 	})
-	return
+  return 
 }
 
 
@@ -46,7 +46,7 @@ func ResgisterHandler(c *gin.Context){
 		hashed_password, err := bcrypt.GenerateFromPassword([]byte(RegisterInfo.PassWord + hash_add_string), 10)
 		if err != nil {
 			c.JSON(http.StatusOK, gin.H{
-				"status" : "OK",
+				"status" : "NG",
 			})
 			return
 		}

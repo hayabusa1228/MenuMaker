@@ -13,7 +13,7 @@ import (
 
 func init(){
 	config.LoggingSettings("./log/test.log")
-	database.CreateUserInfoDB("./database/userinfo.db")
+	database.CreateUserInfoDB("./database/db/userinfo.db")
 }
 
 func main() {
